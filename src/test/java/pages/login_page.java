@@ -26,6 +26,9 @@ public class login_page {
     @FindBy(xpath = "//h4")
     public WebElement headerFour;
 
+    @FindBy(id = "flash")
+    public WebElement failedLoginMsg;
+
     public void login(String username, String password) {
         usernameField.sendKeys(username);
         passwordField.sendKeys(password);

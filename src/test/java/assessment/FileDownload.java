@@ -21,6 +21,7 @@ public class FileDownload extends Hooks {
 
         page.fileLink.click();
 
+        // adjust this wait depending on the amount of time it takes for the machine running the test to download the file
         Thread.sleep(75);
 
         try {

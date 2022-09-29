@@ -8,6 +8,7 @@ import util.Driver;
 
 public class JavasScriptAlert extends Hooks {
 
+    // could use TestNG soft assertions for these test cases and collect the results of the two assertions at the end of each test case.
     JavaScriptAlertsPage page = new JavaScriptAlertsPage(Driver.getDriver());
 
     @Test

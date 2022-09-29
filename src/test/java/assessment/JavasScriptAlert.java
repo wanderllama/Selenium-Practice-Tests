@@ -77,7 +77,8 @@ public class JavasScriptAlert extends Hooks {
         Driver.getDriver().switchTo().alert().sendKeys(expectedText);
         Driver.getDriver().switchTo().alert().accept();
 
-        actualText = "You entered: " + page.result.getText();
+        expectedText = "You entered: " + expectedText;
+        actualText = page.result.getText();
 
         Assert.assertEquals(actualText , expectedText , "result message incorrect for prompt alert interaction");
     }

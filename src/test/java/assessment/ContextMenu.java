@@ -1,6 +1,5 @@
 package assessment;
 
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -15,8 +14,7 @@ public class ContextMenu extends Hooks {
     public void right_click_alert_trigger_test() {
         Driver.getDriver().get("http://localhost:7080/context_menu");
 
-        Actions actions = new Actions(Driver.getDriver());
-        actions.moveToElement(page.hotSpot).contextClick().build().perform();
+        Driver.getActions().moveToElement(page.hotSpot).contextClick().build().perform();
 
         if (Driver.getWait().until(ExpectedConditions.alertIsPresent()) != null) {
             Assert.assertTrue(true);

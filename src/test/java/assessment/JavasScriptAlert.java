@@ -27,6 +27,7 @@ public class JavasScriptAlert extends Hooks {
 
         Driver.getDriver().switchTo().alert().accept();
 
+        // there is a typo on the site message should be "You successfully clicked an alert" -> successfully is misspelled
         expectedText = "You successfuly clicked an alert";
         actualText = page.result.getText();
 

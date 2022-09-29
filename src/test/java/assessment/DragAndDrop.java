@@ -2,7 +2,6 @@ package assessment;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 import pages.DragAndDropPage;
 import util.Driver;
 import util.UI_Util;

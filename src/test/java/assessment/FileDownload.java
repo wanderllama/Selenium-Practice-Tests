@@ -1,14 +1,10 @@
 package assessment;
 
-import org.apache.commons.io.FileUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 import pages.FileDownloadedPage;
 import util.Driver;
 
-import java.io.File;
-import java.io.IOException;
 
 public class FileDownload extends Hooks {
 

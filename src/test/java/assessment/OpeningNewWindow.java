@@ -1,19 +1,16 @@
 package assessment;
 
-import com.sun.source.tree.AssertTree;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.NewWindowPage;
 import pages.OpeningNewWindowPage;
 import util.Driver;
 
-import java.util.List;
 import java.util.Set;
 
 public class OpeningNewWindow extends Hooks {
 
     OpeningNewWindowPage page = new OpeningNewWindowPage(Driver.getDriver());
-    NewWindowPage newWindowPage = new NewWindowPage(Driver.getDriver());
 
     @Test
     public void open_in_new_tab_test() {

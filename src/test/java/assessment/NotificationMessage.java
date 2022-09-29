@@ -5,9 +5,7 @@ import org.testng.annotations.Test;
 import pages.NotificationMessagePage;
 import util.Driver;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class NotificationMessage extends Hooks {
 

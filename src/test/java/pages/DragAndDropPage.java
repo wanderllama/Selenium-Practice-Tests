@@ -10,10 +10,6 @@ public class DragAndDropPage extends BasePage {
         super(driver);
     }
 
-    public String source = "//div[@id='column-a']";
-
-    public String destination = "//div[@id='column-b']";
-
     @FindBy(id = "column-a")
     public WebElement boxA;
 

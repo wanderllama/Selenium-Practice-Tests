@@ -23,8 +23,6 @@ public class DragAndDrop extends Hooks {
         String newTextA = page.boxA.getText();
 //        String newTextB = page.boxB.getText();
 
-        SoftAssert softAssert = new SoftAssert();
-
         Assert.assertEquals(newTextA , originalTextB , "drag and drop failed");
 //        Assert.assertEquals(newTextB , originalTextA);
     }

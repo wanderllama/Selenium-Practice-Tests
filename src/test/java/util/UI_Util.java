@@ -2,6 +2,9 @@ package util;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
 
 public class UI_Util {
 
@@ -19,5 +22,15 @@ public class UI_Util {
                         "'drop',tgt);emit('dragend',src);";
 
         ((JavascriptExecutor) Driver.getDriver()).executeScript(java_script, source, target);
+    }
+
+    public static boolean JSLogsInfoTest(String expectedErrorMsg) {
+        LogEntries logEntries = Driver.getDriver().manage().logs().get(LogType.BROWSER);
+        for (LogEntry entry : logEntries) {
+            if (entry.getMessage().contains(expectedErrorMsg)) {
+                return true;
+            }
+        }
+        return false;
     }
 }

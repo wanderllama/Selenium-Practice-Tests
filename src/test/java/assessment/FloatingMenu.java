@@ -1,6 +1,7 @@
 package assessment;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.FloatingMenuPage;
@@ -16,8 +17,12 @@ public class FloatingMenu extends Hooks {
 
         Driver.getActions().moveToElement(page.pageFooter);
 
-        for (WebElement option : page.floatingMenuOptions) {
-            Assert.assertTrue(option.isDisplayed() , option.getText() + " menu option is not displayed");
+        try {
+            for (WebElement option : page.floatingMenuOptions) {
+                Assert.assertTrue(option.isDisplayed() , option.getText() + " menu option is not displayed");
+            }
+        } catch (IndexOutOfBoundsException e) {
+            Assert.fail("menu options are not visible");
         }
     }
 }

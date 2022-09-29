@@ -3,13 +3,11 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class DragAndDropPage {
+public class DragAndDropPage extends BasePage {
 
     public DragAndDropPage(WebDriver driver) {
-        PageFactory.initElements(driver , this);
+        super(driver);
     }
 
     public String source = "//div[@id='column-a']";

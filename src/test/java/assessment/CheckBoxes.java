@@ -23,10 +23,9 @@ public class CheckBoxes extends Hooks{
                 element.click();
             } else {
                 element.click();
-                Assert.assertFalse(element.isSelected());
                 element.click();
             }
-            Assert.assertTrue(element.isSelected());
+            Assert.assertTrue(element.isSelected() , "checkbox is not selected");
         }
     }
 }

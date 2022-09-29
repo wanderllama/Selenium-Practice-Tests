@@ -18,7 +18,7 @@ public class LoginValidation extends Hooks{
         page.login(username , password);
 
         String expectedHeader = "Welcome to the Secure Area. When you are done click logout below.";
-        Assert.assertEquals(page.headerFour.getText() , expectedHeader);
+        Assert.assertEquals(page.headerFour.getText() , expectedHeader , "login failed");
     }
 
     @Test
@@ -28,7 +28,7 @@ public class LoginValidation extends Hooks{
         Driver.getDriver().get("http://localhost:7080/login");
         page.login(invalid , invalid);
 
-        Assert.assertTrue(page.failedLoginMsg.isDisplayed());
+        Assert.assertTrue(page.failedLoginMsg.isDisplayed() , "test failed -> login successfully");
     }
 
 

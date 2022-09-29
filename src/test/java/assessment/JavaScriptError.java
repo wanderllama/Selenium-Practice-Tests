@@ -13,6 +13,6 @@ public class JavaScriptError extends Hooks {
 
         String expectedErrorMsg = "Cannot read properties of undefined (reading 'xyz')";
 
-        Assert.assertTrue(UI_Util.JSLogsInfoTest(expectedErrorMsg));
+        Assert.assertTrue(UI_Util.JSLogsInfoTest(expectedErrorMsg) , "error message does not match the expected error message");
     }
 }

@@ -1,14 +1,11 @@
 package assessment;
 
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.DynamicContentPage;
 import util.Driver;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class DynamicContent extends Hooks {
 

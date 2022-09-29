@@ -24,7 +24,7 @@ public class DropDown extends Hooks {
         if (options.size() > 0) {
             for (WebElement option : options) {
                 dropdown.selectByVisibleText(option.getText());
-                Assert.assertTrue(option.isSelected());
+                Assert.assertTrue(option.isSelected() , option.getText() + " option is not selected");
             }
         } else {
             Assert.fail("dropdown has no options");

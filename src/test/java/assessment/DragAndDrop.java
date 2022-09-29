@@ -1,9 +1,5 @@
 package assessment;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -29,7 +25,7 @@ public class DragAndDrop extends Hooks {
 
         SoftAssert softAssert = new SoftAssert();
 
-        Assert.assertEquals(newTextA , originalTextB);
+        Assert.assertEquals(newTextA , originalTextB , "drag and drop failed");
 //        Assert.assertEquals(newTextB , originalTextA);
     }
 }

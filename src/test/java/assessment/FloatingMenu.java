@@ -22,7 +22,7 @@ public class FloatingMenu extends Hooks {
                 Assert.assertTrue(option.isDisplayed() , option.getText() + " menu option is not displayed");
             }
         } catch (IndexOutOfBoundsException e) {
-            Assert.fail("menu options are not visible");
+            Assert.fail("menu options are not visible -> confirm that locator is still valid");
         }
     }
 }

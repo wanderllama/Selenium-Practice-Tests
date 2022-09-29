@@ -4,13 +4,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import util.Driver;
 
 import java.util.List;
 
-public class checkboxes {
+public class CheckboxesPage {
 
-    public checkboxes(WebDriver driver) { PageFactory.initElements(driver , this); }
+    public CheckboxesPage(WebDriver driver) { PageFactory.initElements(driver , this); }
 
     @FindBy(xpath = "//input[@type='checkbox']")
     public List<WebElement> checkboxes;

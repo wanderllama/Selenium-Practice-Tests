@@ -5,12 +5,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.context_menu;
+import pages.ContextMenuPage;
 import util.Driver;
 
 public class ContextMenu extends Hooks {
 
-    context_menu page = new context_menu(Driver.getDriver());
+    ContextMenuPage page = new ContextMenuPage(Driver.getDriver());
 
     @Test
     public void right_click_alert_trigger_test() {

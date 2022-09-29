@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class context_menu {
+public class ContextMenuPage {
 
-    public context_menu(WebDriver driver) {
+    public ContextMenuPage(WebDriver driver) {
         PageFactory.initElements(driver , this);
     }
 

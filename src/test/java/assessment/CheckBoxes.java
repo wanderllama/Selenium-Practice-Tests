@@ -3,14 +3,14 @@ package assessment;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.checkboxes;
+import pages.CheckboxesPage;
 import util.Driver;
 
 import java.util.List;
 
 public class CheckBoxes extends Hooks{
 
-    checkboxes page = new checkboxes(Driver.getDriver());
+    CheckboxesPage page = new CheckboxesPage(Driver.getDriver());
 
     @Test
     public void checkboxes_test() {

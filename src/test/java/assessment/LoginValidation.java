@@ -2,12 +2,12 @@ package assessment;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.login_page;
+import pages.LoginPage;
 import util.Driver;
 
 public class LoginValidation extends Hooks{
 
-    login_page page = new login_page(Driver.getDriver());
+    LoginPage page = new LoginPage(Driver.getDriver());
 
     @Test
     public void login_success() {

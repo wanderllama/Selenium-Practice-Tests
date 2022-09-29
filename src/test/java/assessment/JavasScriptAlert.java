@@ -23,11 +23,26 @@ public class JavasScriptAlert extends Hooks {
         String expectedText = "I am a JS Alert";
         String actualText = Driver.getDriver().switchTo().alert().getText();
 
-        Assert.assertEquals(actualText , expectedText);
+        Assert.assertEquals(actualText , expectedText , "simple alert message incorrect");
     }
 
     @Test
     public void javascript_confirmation_alert_test() {
+        Driver.getDriver().get("http://localhost:7080/javascript_alerts");
 
+        try {
+            page.confirmAlertButton.click();
+        } catch (NoAlertPresentException e) {
+            Assert.fail("simple alert not present");
+        }
+
+        String expectedAlertText = "I am a JS Confirm";
+        String actualAlertText = Driver.getDriver().switchTo().alert().getText();
+
+        Assert.assertEquals(actualAlertText , expectedAlertText , "confirmation alert incorrect");
+
+        Driver.getDriver().switchTo().alert().accept();
     }
+
+
 }

@@ -12,8 +12,7 @@ public class FloatingMenuPage extends BasePage {
         super(driver);
     }
 
-    @FindBy(id = "page-footer")
-    public WebElement pageFooter;
+
 
     @FindBy(xpath = "//div[@id='menu']//li")
     public List<WebElement> floatingMenuOptions;

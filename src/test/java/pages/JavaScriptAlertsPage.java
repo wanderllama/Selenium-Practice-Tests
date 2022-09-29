@@ -18,4 +18,7 @@ public class JavaScriptAlertsPage extends BasePage {
 
     @FindBy(xpath = "//button[.='Click for JS Prompt']")
     public WebElement promptAlertButton;
+
+    @FindBy(id = "result")
+    public WebElement result;
 }

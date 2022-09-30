@@ -10,6 +10,10 @@ public class LoginValidation extends Hooks {
 
     LoginPage page = new LoginPage(Driver.getDriver());
 
+    String expectedHeaderMsg;
+
+    String actualHeaderMsg;
+
     @Test
     public void login_success() {
         String username = "tomsmith";
@@ -18,18 +22,44 @@ public class LoginValidation extends Hooks {
         Driver.getDriver().get("http://localhost:7080/login");
         page.login(username , password);
 
-        String expectedHeader = "Welcome to the Secure Area. When you are done click logout below.";
-        Assert.assertEquals(page.headerFour.getText() , expectedHeader , "login failed");
+        expectedHeaderMsg = "Welcome to the Secure Area. When you are done click logout below.";
+        actualHeaderMsg = page.headerFour.getText();
+
+        Assert.assertEquals(actualHeaderMsg , expectedHeaderMsg , "login failed");
     }
 
     @Test
-    public void login_failure() {
+    public void login_failure_invalid_username_message() {
         String invalid= "invalid";
 
         Driver.getDriver().get("http://localhost:7080/login");
         page.login(invalid , invalid);
 
-        Assert.assertTrue(page.failedLoginMsg.isDisplayed() , "test failed -> login successfully");
+        Assert.assertTrue(page.failedLoginMsg.isDisplayed() , "test failed -> login was successfull");
+
+        expectedHeaderMsg = "Your username is invalid!";
+
+        actualHeaderMsg = page.failedLoginMsg.getText();
+        actualHeaderMsg = actualHeaderMsg.substring(actualHeaderMsg.indexOf('Y') , actualHeaderMsg.lastIndexOf('!') + 1);
+
+        Assert.assertEquals(actualHeaderMsg , expectedHeaderMsg , "failed login message incorrect");
+    }
+
+    @Test
+    public void login_failure_invalid_password_message() {
+        String invalid= "invalid";
+
+        Driver.getDriver().get("http://localhost:7080/login");
+        page.login("tomsmith" , invalid);
+
+        Assert.assertTrue(page.failedLoginMsg.isDisplayed() , "test failed -> login was successfull");
+
+        expectedHeaderMsg = "Your password is invalid!";
+
+        actualHeaderMsg = page.failedLoginMsg.getText();
+        actualHeaderMsg = actualHeaderMsg.substring(actualHeaderMsg.indexOf('Y') , actualHeaderMsg.lastIndexOf('!') + 1);
+
+        Assert.assertEquals(actualHeaderMsg , expectedHeaderMsg , "failed login message incorrect");
     }
 
 

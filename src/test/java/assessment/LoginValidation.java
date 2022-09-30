@@ -61,6 +61,4 @@ public class LoginValidation extends Hooks {
 
         Assert.assertEquals(actualHeaderMsg , expectedHeaderMsg , "failed login message incorrect");
     }
-
-
 }

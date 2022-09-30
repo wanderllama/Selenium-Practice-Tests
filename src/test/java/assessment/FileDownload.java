@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 import pages.FileDownloadedPage;
 import util.Driver;
 
-
 public class FileDownload extends Hooks {
 
     // file destination -> C:\Users\Jawal\IdeaProjects\dotdash\target\downloaded-files-from-tests

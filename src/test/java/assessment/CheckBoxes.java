@@ -11,7 +11,6 @@ import java.util.List;
 public class CheckBoxes extends Hooks{
 
     CheckboxesPage page = new CheckboxesPage(Driver.getDriver());
-
     @Test
     public void checkboxes_test() {
         Driver.getDriver().get("http://localhost:7080/checkboxes");

@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.DynamicContentPage;
 import util.Driver;
+import util.Hooks;
 
 import java.util.List;
 

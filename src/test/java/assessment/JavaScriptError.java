@@ -3,6 +3,7 @@ package assessment;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import util.Driver;
+import util.Hooks;
 import util.UI_Util;
 
 public class JavaScriptError extends Hooks {

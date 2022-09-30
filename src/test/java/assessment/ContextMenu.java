@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.ContextMenuPage;
 import util.Driver;
+import util.Hooks;
 
 public class ContextMenu extends Hooks {
 

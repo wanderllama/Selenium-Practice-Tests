@@ -10,9 +10,9 @@ public class Driver {
 
     private static WebDriver driver;
 
+    // change test cases to use hooks instead of this Driver class to complete the assignment for recruiter
     public static WebDriver getDriver() {
         if (driver == null) {
-            WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
         }
         return driver;
@@ -23,5 +23,4 @@ public class Driver {
     }
 
     public static Actions getActions() { return new Actions(driver); }
-
 }

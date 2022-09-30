@@ -5,10 +5,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.CheckboxesPage;
 import util.Driver;
+import util.Hooks;
 
 import java.util.List;
 
-public class CheckBoxes extends Hooks{
+public class CheckBoxes extends Hooks {
 
     CheckboxesPage page = new CheckboxesPage(Driver.getDriver());
     @Test

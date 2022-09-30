@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.DynamicWaitPage;
 import util.Driver;
+import util.Hooks;
 
 public class DynamicWait extends Hooks {
 

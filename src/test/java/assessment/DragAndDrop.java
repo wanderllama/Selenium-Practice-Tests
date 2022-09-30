@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.DragAndDropPage;
 import util.Driver;
+import util.Hooks;
 import util.UI_Util;
 
 public class DragAndDrop extends Hooks {

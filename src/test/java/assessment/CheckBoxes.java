@@ -18,14 +18,18 @@ public class CheckBoxes extends Hooks {
 
         List<WebElement> allCheckBoxes = page.checkboxes;
 
-        for (WebElement element : allCheckBoxes) {
-            if (!element.isSelected()) {
-                element.click();
-            } else {
-                element.click();
-                element.click();
+        try {
+            for (WebElement element : allCheckBoxes) {
+                if (!element.isSelected()) {
+                    element.click();
+                } else {
+                    element.click();
+                    element.click();
+                }
+                Assert.assertTrue(element.isSelected() , "checkbox is not selected");
             }
-            Assert.assertTrue(element.isSelected() , "checkbox is not selected");
+        } catch (IndexOutOfBoundsException e) {
+            Assert.fail("no webelements in the list");
         }
     }
 }

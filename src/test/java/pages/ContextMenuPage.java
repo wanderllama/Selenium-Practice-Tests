@@ -10,6 +10,6 @@ public class ContextMenuPage extends BasePage{
         super(driver);
     }
 
-    @FindBy(id = "hot-spot")
+    @FindBy(xpath = "//div[@id='hot-spot']")
     public WebElement hotSpot;
 }

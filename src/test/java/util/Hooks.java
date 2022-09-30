@@ -8,7 +8,7 @@ public class Hooks {
 
     @BeforeMethod
     public void setup() {
-        WebDriverManager.chromedriver().setup();
+
     }
 
     @AfterMethod

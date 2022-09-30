@@ -18,7 +18,8 @@ public class ContextMenu extends Hooks {
         Driver.getActions().moveToElement(page.hotSpot).contextClick().build().perform();
 
         if (Driver.getWait().until(ExpectedConditions.alertIsPresent()) != null) {
-            Assert.assertTrue(true);
+            String expectedText = "You selected a context menu";
+            Assert.assertEquals(Driver.getDriver().switchTo().alert().getText() , expectedText , "alert message incorrect");
         } else {
             Assert.fail("alert is not present");
         }

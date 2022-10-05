@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 public class LoginPage extends BasePage {
 
@@ -32,6 +33,15 @@ public class LoginPage extends BasePage {
         usernameField.sendKeys(username);
         passwordField.sendKeys(password);
         submitButton.click();
+    }
+
+    public String parseFailedLoginMessage(String actualHeaderMsg) {
+        try {
+            actualHeaderMsg = actualHeaderMsg.substring(actualHeaderMsg.indexOf('Y') , actualHeaderMsg.lastIndexOf('!') + 1);
+        } catch (StringIndexOutOfBoundsException e) {
+            Assert.fail("failed login message incorrect");
+        }
+        return actualHeaderMsg;
     }
 }
 

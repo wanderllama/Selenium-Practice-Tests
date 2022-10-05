@@ -40,7 +40,7 @@ public class LoginValidation extends Hooks {
         expectedHeaderMsg = "Your username is invalid!";
 
         actualHeaderMsg = page.failedLoginMsg.getText();
-        actualHeaderMsg = actualHeaderMsg.substring(actualHeaderMsg.indexOf('Y') , actualHeaderMsg.lastIndexOf('!') + 1);
+        actualHeaderMsg = page.parseFailedLoginMessage(actualHeaderMsg);
 
         Assert.assertEquals(actualHeaderMsg , expectedHeaderMsg , "failed login message incorrect");
     }
@@ -57,7 +57,7 @@ public class LoginValidation extends Hooks {
         expectedHeaderMsg = "Your password is invalid!";
 
         actualHeaderMsg = page.failedLoginMsg.getText();
-        actualHeaderMsg = actualHeaderMsg.substring(actualHeaderMsg.indexOf('Y') , actualHeaderMsg.lastIndexOf('!') + 1);
+        actualHeaderMsg = page.parseFailedLoginMessage(actualHeaderMsg);
 
         Assert.assertEquals(actualHeaderMsg , expectedHeaderMsg , "failed login message incorrect");
     }

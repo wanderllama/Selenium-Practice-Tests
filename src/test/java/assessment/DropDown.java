@@ -22,13 +22,22 @@ public class DropDown extends Hooks {
 
         List<WebElement> options = dropdown.getOptions();
 
-        if (options.size() > 0) {
+        try {
             for (WebElement option : options) {
                 dropdown.selectByVisibleText(option.getText());
                 Assert.assertTrue(option.isSelected() , option.getText() + " option is not selected");
             }
-        } else {
+        } catch (IndexOutOfBoundsException e) {
             Assert.fail("dropdown has no options");
         }
+
+//        if (options.size() > 0) {
+//            for (WebElement option : options) {
+//                dropdown.selectByVisibleText(option.getText());
+//                Assert.assertTrue(option.isSelected() , option.getText() + " option is not selected");
+//            }
+//        } else {
+//            Assert.fail("dropdown has no options");
+//        }
     }
 }

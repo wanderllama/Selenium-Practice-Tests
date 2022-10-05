@@ -29,7 +29,7 @@ public class CheckBoxes extends Hooks {
                 Assert.assertTrue(element.isSelected() , "checkbox is not selected");
             }
         } catch (IndexOutOfBoundsException e) {
-            Assert.fail("no webelements in the list");
+            Assert.fail("no web elements in the list");
         }
     }
 }

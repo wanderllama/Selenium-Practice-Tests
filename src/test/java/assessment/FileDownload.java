@@ -19,7 +19,9 @@ public class FileDownload extends Hooks {
 
         // adjust this wait depending on the amount of time it takes for the machine running the test to download the file
         Thread.sleep(75);
-
+        
+       
+        // need to use getText() method on the hyperlink and use the visible text to use in the assertion, since the visible text is the name of the file
         try {
             Assert.assertTrue(page.fileDownload("some-file.txt"), "file not found in " + page.directory);
         } catch (InterruptedException e) {

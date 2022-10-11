@@ -5,9 +5,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.FloatingMenuPage;
 import util.Driver;
-import util.Hooks;
 
-public class FloatingMenu extends Hooks {
+public class FloatingMenu extends Driver {
 
     FloatingMenuPage page = new FloatingMenuPage(Driver.getDriver());
 

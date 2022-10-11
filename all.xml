@@ -1,0 +1,91 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Jawal/IdeaProjects/dotdash">
+        <classes>
+            <class name="assessment.CheckBoxes">
+                <methods>
+                    <include name="checkboxes_test"/>
+                </methods>
+            </class>
+            <class name="assessment.ContextMenu">
+                <methods>
+                    <include name="right_click_alert_trigger_test"/>
+                </methods>
+            </class>
+            <class name="assessment.DragAndDrop">
+                <methods>
+                    <include name="drag_and_drop_test"/>
+                </methods>
+            </class>
+            <class name="assessment.DropDown">
+                <methods>
+                    <include name="dropdown_test"/>
+                </methods>
+            </class>
+            <class name="assessment.DynamicContent">
+                <methods>
+                    <include name="dynamic_content"/>
+                </methods>
+            </class>
+            <class name="assessment.DynamicWait">
+                <methods>
+                    <include name="dynamic_wait_test"/>
+                </methods>
+            </class>
+            <class name="assessment.FileDownload">
+                <methods>
+                    <include name="file_download_test"/>
+                </methods>
+            </class>
+            <class name="assessment.FileUpload">
+                <methods>
+                    <include name="file_upload_test"/>
+                </methods>
+            </class>
+            <class name="assessment.FloatingMenu">
+                <methods>
+                    <include name="floating_menu_test"/>
+                </methods>
+            </class>
+            <class name="assessment.IFrame">
+                <methods>
+                    <include name="iframe_test"/>
+                </methods>
+            </class>
+            <class name="assessment.JavaScriptError">
+                <methods>
+                    <include name="javascript_error_test"/>
+                </methods>
+            </class>
+            <class name="assessment.JavasScriptAlert">
+                <methods>
+                    <include name="javascript_simple_alert_test"/>
+                    <include name="javascript_confirmation_alert_test"/>
+                    <include name="javascript_prompt_alert_test"/>
+                </methods>
+            </class>
+            <class name="assessment.LoginValidation">
+                <methods>
+                    <include name="login_success"/>
+                    <include name="login_failure_invalid_username_message"/>
+                    <include name="login_failure_invalid_password_message"/>
+                </methods>
+            </class>
+            <class name="assessment.MouseHover">
+                <methods>
+                    <include name="mouse_hover_test"/>
+                </methods>
+            </class>
+            <class name="assessment.NotificationMessage">
+                <methods>
+                    <include name="notification_message_test"/>
+                </methods>
+            </class>
+            <class name="assessment.OpeningNewWindow">
+                <methods>
+                    <include name="open_in_new_tab_test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

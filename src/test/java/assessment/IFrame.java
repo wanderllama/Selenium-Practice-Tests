@@ -4,9 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.IFramePage;
 import util.Driver;
-import util.Hooks;
 
-public class IFrame extends Hooks {
+public class IFrame extends Driver {
 
     IFramePage page = new IFramePage(Driver.getDriver());
 

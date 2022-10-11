@@ -5,9 +5,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.JavaScriptAlertsPage;
 import util.Driver;
-import util.Hooks;
 
-public class JavasScriptAlert extends Hooks {
+public class JavasScriptAlert extends Driver {
 
     // could use TestNG soft assertions for these test cases and collect the results of the two assertions at the end of each test case.
     JavaScriptAlertsPage page = new JavaScriptAlertsPage(Driver.getDriver());

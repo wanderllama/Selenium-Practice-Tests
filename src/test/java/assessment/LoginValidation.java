@@ -1,14 +1,11 @@
 package assessment;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 import util.Driver;
-import util.Hooks;
 
-public class LoginValidation extends Hooks {
+public class LoginValidation extends Driver {
 
     LoginPage page = new LoginPage(Driver.getDriver());
 

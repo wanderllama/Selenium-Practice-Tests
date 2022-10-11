@@ -5,9 +5,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.FileUploadPage;
 import util.Driver;
-import util.Hooks;
 
-public class FileUpload extends Hooks {
+public class FileUpload extends Driver {
 
     FileUploadPage page = new FileUploadPage(Driver.getDriver());
 

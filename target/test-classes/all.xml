@@ -2,7 +2,7 @@
 
 <suite name="All Test Suite">
     
-    <test verbose="2" preserve-order="true" name="C:/Users/Jawal/IdeaProjects/dotdash/src/test/resources">
+    <test verbose="2" preserve-order="true" name="C:/Users/Jawal/IdeaProjects/dotdash/src/domainClicks/resources">
         <classes>
             <class name="assessment.CheckBoxes"></class>
             <class name="assessment.ContextMenu"></class>

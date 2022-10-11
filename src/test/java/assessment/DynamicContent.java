@@ -4,11 +4,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.DynamicContentPage;
 import util.Driver;
-import util.Hooks;
 
 import java.util.List;
 
-public class DynamicContent extends Hooks {
+public class DynamicContent extends Driver{
 
     DynamicContentPage page = new DynamicContentPage(Driver.getDriver());
 

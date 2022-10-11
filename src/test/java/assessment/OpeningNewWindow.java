@@ -5,11 +5,10 @@ import org.testng.annotations.Test;
 import pages.NewWindowPage;
 import pages.OpeningNewWindowPage;
 import util.Driver;
-import util.Hooks;
 
 import java.util.Set;
 
-public class OpeningNewWindow extends Hooks {
+public class OpeningNewWindow extends Driver {
 
     OpeningNewWindowPage page = new OpeningNewWindowPage(Driver.getDriver());
 

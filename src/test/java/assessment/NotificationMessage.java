@@ -4,11 +4,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.NotificationMessagePage;
 import util.Driver;
-import util.Hooks;
 
 import java.util.Arrays;
 
-public class NotificationMessage extends Hooks {
+public class NotificationMessage extends Driver {
 
     NotificationMessagePage page = new NotificationMessagePage(Driver.getDriver());
 

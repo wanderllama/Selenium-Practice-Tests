@@ -21,8 +21,6 @@ public class OpeningNewWindow extends Driver {
         String currentHandle = Driver.getDriver().getWindowHandle();
         Set<String> handles = Driver.getDriver().getWindowHandles();
 
-        Assert.assertTrue(handles.size() != 1 , "new window not opened, getWindowHandles() only returned one handle");
-
         for (String handle : handles) {
             if (!handle.equals(currentHandle)) {
                 Driver.getDriver().switchTo().window(handle);
@@ -30,7 +28,7 @@ public class OpeningNewWindow extends Driver {
         }
 
         String expectedText = "New Window";
-        String actualText = NewWindowPage.headerThree.getText();
+        String actualText = page.pageHeader.getText();
 
         Assert.assertEquals(actualText , expectedText , "The header text of the new window is not correct. actualText: " + actualText + "\nexpectedText: " + expectedText);
 

@@ -12,11 +12,11 @@
                     <include name="right_click_alert_trigger_test"/>
                 </methods>
             </class>
-<!--            <class name="assessment.DragAndDrop">-->
-<!--                <methods>-->
-<!--                    <include name="drag_and_drop_test"/>-->
-<!--                </methods>-->
-<!--            </class>-->
+            <class name="assessment.DragAndDrop">
+                <methods>
+                    <include name="drag_and_drop_test"/>
+                </methods>
+            </class>
             <class name="assessment.DropDown">
                 <methods>
                     <include name="dropdown_test"/>
@@ -32,11 +32,11 @@
                     <include name="dynamic_wait_test"/>
                 </methods>
             </class>
-<!--            <class name="assessment.FileDownload">-->
-<!--                <methods>-->
-<!--                    <include name="file_download_test"/>-->
-<!--                </methods>-->
-<!--            </class>-->
+            <class name="assessment.FileDownload">
+                <methods>
+                    <include name="file_download_test"/>
+                </methods>
+            </class>
             <class name="assessment.FileUpload">
                 <methods>
                     <include name="file_upload_test"/>

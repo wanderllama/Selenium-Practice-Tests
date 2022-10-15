@@ -19,6 +19,7 @@ public class ContextMenu extends Driver {
         if (Driver.getWait().until(ExpectedConditions.alertIsPresent()) != null) {
             String expectedText = "You selected a context menu";
             Assert.assertEquals(Driver.getDriver().switchTo().alert().getText() , expectedText , "alert message incorrect");
+            Driver.getDriver().switchTo().alert().accept()
         } else {
             Assert.fail("alert is not present");
         }

@@ -32,11 +32,11 @@
                     <include name="dynamic_wait_test"/>
                 </methods>
             </class>
-            <class name="assessment.FileDownload">
-                <methods>
-                    <include name="file_download_test"/>
-                </methods>
-            </class>
+<!--            <class name="assessment.FileDownload">-->
+<!--                <methods>-->
+<!--                    <include name="file_download_test"/>-->
+<!--                </methods>-->
+<!--            </class>-->
             <class name="assessment.FileUpload">
                 <methods>
                     <include name="file_upload_test"/>

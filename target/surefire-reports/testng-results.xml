@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="28" total="47" passed="19" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-15T10:45:09 EDT" name="All Test Suite" finished-at="2022-10-15T10:45:24 EDT" duration-ms="15099">
+    <groups>
+    </groups>
+    <test started-at="2022-10-15T10:45:09 EDT" name="C:/Users/Jawal/IdeaProjects/dotdash" finished-at="2022-10-15T10:45:24 EDT" duration-ms="15099">
+      <class name="assessment.DynamicWait">
+        <test-method signature="dynamic_wait_test()[pri:0, instance:assessment.DynamicWait@7ed9ae94]" started-at="2022-10-15T10:45:11 EDT" name="dynamic_wait_test" finished-at="2022-10-15T10:45:16 EDT" duration-ms="5229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamic_wait_test -->
+      </class> <!-- assessment.DynamicWait -->
+      <class name="assessment.LoginValidation">
+        <test-method signature="login_success()[pri:0, instance:assessment.LoginValidation@736ac09a]" started-at="2022-10-15T10:45:19 EDT" name="login_success" finished-at="2022-10-15T10:45:20 EDT" duration-ms="530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_success -->
+        <test-method signature="login_failure_invalid_username_message()[pri:0, instance:assessment.LoginValidation@736ac09a]" started-at="2022-10-15T10:45:20 EDT" name="login_failure_invalid_username_message" finished-at="2022-10-15T10:45:20 EDT" duration-ms="462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_failure_invalid_username_message -->
+        <test-method signature="login_failure_invalid_password_message()[pri:0, instance:assessment.LoginValidation@736ac09a]" started-at="2022-10-15T10:45:20 EDT" name="login_failure_invalid_password_message" finished-at="2022-10-15T10:45:20 EDT" duration-ms="386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_failure_invalid_password_message -->
+      </class> <!-- assessment.LoginValidation -->
+      <class name="assessment.FileUpload">
+        <test-method signature="file_upload_test()[pri:0, instance:assessment.FileUpload@41477a6d]" started-at="2022-10-15T10:45:16 EDT" name="file_upload_test" finished-at="2022-10-15T10:45:17 EDT" duration-ms="371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- file_upload_test -->
+      </class> <!-- assessment.FileUpload -->
+      <class name="assessment.CheckBoxes">
+        <test-method is-config="true" signature="setup()[pri:0, instance:assessment.CheckBoxes@2234078]" started-at="2022-10-15T10:45:09 EDT" name="setup" finished-at="2022-10-15T10:45:09 EDT" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkboxes_test()[pri:0, instance:assessment.CheckBoxes@2234078]" started-at="2022-10-15T10:45:09 EDT" name="checkboxes_test" finished-at="2022-10-15T10:45:09 EDT" duration-ms="734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkboxes_test -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:assessment.CheckBoxes@2234078]" started-at="2022-10-15T10:45:23 EDT" name="teardown" finished-at="2022-10-15T10:45:24 EDT" duration-ms="716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- assessment.CheckBoxes -->
+      <class name="assessment.DynamicContent">
+        <test-method signature="dynamic_content()[pri:0, instance:assessment.DynamicContent@64e1dd11]" started-at="2022-10-15T10:45:11 EDT" name="dynamic_content" finished-at="2022-10-15T10:45:11 EDT" duration-ms="397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamic_content -->
+      </class> <!-- assessment.DynamicContent -->
+      <class name="assessment.MouseHover">
+        <test-method signature="mouse_hover_test()[pri:0, instance:assessment.MouseHover@45394b31]" started-at="2022-10-15T10:45:20 EDT" name="mouse_hover_test" finished-at="2022-10-15T10:45:21 EDT" duration-ms="708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouse_hover_test -->
+      </class> <!-- assessment.MouseHover -->
+      <class name="assessment.DragAndDrop">
+        <test-method signature="drag_and_drop_test()[pri:0, instance:assessment.DragAndDrop@6bff19ff]" started-at="2022-10-15T10:45:10 EDT" name="drag_and_drop_test" finished-at="2022-10-15T10:45:10 EDT" duration-ms="322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drag_and_drop_test -->
+      </class> <!-- assessment.DragAndDrop -->
+      <class name="assessment.JavasScriptAlert">
+        <test-method signature="javascript_simple_alert_test()[pri:0, instance:assessment.JavasScriptAlert@17ca8b92]" started-at="2022-10-15T10:45:18 EDT" name="javascript_simple_alert_test" finished-at="2022-10-15T10:45:19 EDT" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javascript_simple_alert_test -->
+        <test-method signature="javascript_confirmation_alert_test()[pri:0, instance:assessment.JavasScriptAlert@17ca8b92]" started-at="2022-10-15T10:45:19 EDT" name="javascript_confirmation_alert_test" finished-at="2022-10-15T10:45:19 EDT" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javascript_confirmation_alert_test -->
+        <test-method signature="javascript_prompt_alert_test()[pri:0, instance:assessment.JavasScriptAlert@17ca8b92]" started-at="2022-10-15T10:45:19 EDT" name="javascript_prompt_alert_test" finished-at="2022-10-15T10:45:19 EDT" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javascript_prompt_alert_test -->
+      </class> <!-- assessment.JavasScriptAlert -->
+      <class name="assessment.ContextMenu">
+        <test-method signature="right_click_alert_trigger_test()[pri:0, instance:assessment.ContextMenu@3eb631b8]" started-at="2022-10-15T10:45:09 EDT" name="right_click_alert_trigger_test" finished-at="2022-10-15T10:45:10 EDT" duration-ms="350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- right_click_alert_trigger_test -->
+      </class> <!-- assessment.ContextMenu -->
+      <class name="assessment.NotificationMessage">
+        <test-method signature="notification_message_test()[pri:0, instance:assessment.NotificationMessage@3b0ca5e1]" started-at="2022-10-15T10:45:21 EDT" name="notification_message_test" finished-at="2022-10-15T10:45:23 EDT" duration-ms="1553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notification_message_test -->
+      </class> <!-- assessment.NotificationMessage -->
+      <class name="assessment.FloatingMenu">
+        <test-method signature="floating_menu_test()[pri:0, instance:assessment.FloatingMenu@6fe46b62]" started-at="2022-10-15T10:45:17 EDT" name="floating_menu_test" finished-at="2022-10-15T10:45:17 EDT" duration-ms="254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- floating_menu_test -->
+      </class> <!-- assessment.FloatingMenu -->
+      <class name="assessment.OpeningNewWindow">
+        <test-method signature="open_in_new_tab_test()[pri:0, instance:assessment.OpeningNewWindow@54dcbb9f]" started-at="2022-10-15T10:45:23 EDT" name="open_in_new_tab_test" finished-at="2022-10-15T10:45:23 EDT" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_in_new_tab_test -->
+      </class> <!-- assessment.OpeningNewWindow -->
+      <class name="assessment.DropDown">
+        <test-method signature="dropdown_test()[pri:0, instance:assessment.DropDown@4e558728]" started-at="2022-10-15T10:45:10 EDT" name="dropdown_test" finished-at="2022-10-15T10:45:11 EDT" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdown_test -->
+      </class> <!-- assessment.DropDown -->
+      <class name="assessment.IFrame">
+        <test-method signature="iframe_test()[pri:0, instance:assessment.IFrame@61e45f87]" started-at="2022-10-15T10:45:17 EDT" name="iframe_test" finished-at="2022-10-15T10:45:18 EDT" duration-ms="1539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iframe_test -->
+      </class> <!-- assessment.IFrame -->
+      <class name="assessment.JavaScriptError">
+        <test-method signature="javascript_error_test()[pri:0, instance:assessment.JavaScriptError@7c9b78e3]" started-at="2022-10-15T10:45:18 EDT" name="javascript_error_test" finished-at="2022-10-15T10:45:18 EDT" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javascript_error_test -->
+      </class> <!-- assessment.JavaScriptError -->
+    </test> <!-- C:/Users/Jawal/IdeaProjects/dotdash -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
